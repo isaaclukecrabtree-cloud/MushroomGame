@@ -30,12 +30,3 @@ class Tree(pygame.sprite.Sprite):
 
     def draw(self, surface):
         surface.blit(self.image, self.rect)
-
-class Grass(pygame.sprite.Sprite):
-    def __init__(self, x, y):
-        super().__init__()
-        self.image = pygame.transform.scale(pygame.image.load("windgrass1.png").convert_alpha(), (300, 300))
-        self.rect = self.image.get_rect(topleft=(x, y))
-
-    def draw(self, surface):
-        surface.blit(self.image, self.rect)
