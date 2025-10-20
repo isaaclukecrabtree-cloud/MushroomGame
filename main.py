@@ -11,9 +11,9 @@ pygame.display.set_caption("Mushroom Game")
 clock = pygame.time.Clock()
 
 # Game loop
-frog=Frog(1440,300)
+frog=Frog(1360,200)
 mushroom = Mushroom(WIDTH, HEIGHT)
-mushroom.rect.center = (620,150)
+mushroom.rect.center = (300,100)
 running = True
 
 while running:
